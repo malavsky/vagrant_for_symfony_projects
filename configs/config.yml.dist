@@ -1,0 +1,21 @@
+vm:
+    memory: 2048
+    cpus: 2
+    ioapic: "on"
+    box: ubuntu/trusty64
+    host_name: symfonytest.dev
+    synced_folder_from: htdocs
+    synced_folder_to: /var/www/symfony_test
+    synced_folder_type: nfs
+    network_ip: 192.168.50.10
+database:
+    root_password: rootpwd
+    db_name: symfony_test
+xdebug:
+    remote_host: 192.168.50.1
+    idekey: XDEBUGIDEKEY
+git:
+    ssh_url: ~
+    http_url: github.com/test/test.git
+    http_user: username
+    http_password: user_password
